@@ -26,7 +26,11 @@ Run the following commands in the <project_directory>/Data/ directory to pull th
     wget http://www.cs.toronto.edu/~rkiros/models/utable.npy
     wget http://www.cs.toronto.edu/~rkiros/models/btable.npy
     wget http://www.cs.toronto.edu/~rkiros/models/uni_skip.npz
+    wget http://www.cs.toronto.edu/~rkiros/models/uni_skip.npz.pkl
     wget http://www.cs.toronto.edu/~rkiros/models/bi_skip.npz
+    wget http://www.cs.toronto.edu/~rkiros/models/bi_skip.npz.pkl
+    wget http://www.cs.toronto.edu/~rkiros/models/dictionary.txt
+
 
 Open skipthoughts.py and set your local paths to the <project_directory>/Data/ folder. They are currently set to my path, just change them and run:
     
