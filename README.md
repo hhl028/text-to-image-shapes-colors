@@ -20,8 +20,13 @@ You will also need to install the following for use for the GAN implementation
 * Tensorflow
 
 ## Getting started
+First create a Data directory:
+    
+    cd <project_directory>
+    mkdir Data
+    cd Data
 
-Run the following commands in the <project_directory>/Data/ directory to pull the data files. They are LARGE.
+Run the following commands in this <project_directory>/Data/ directory to pull the data files. They are LARGE.
 
     wget http://www.cs.toronto.edu/~rkiros/models/utable.npy
     wget http://www.cs.toronto.edu/~rkiros/models/btable.npy
