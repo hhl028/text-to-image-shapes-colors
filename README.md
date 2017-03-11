@@ -5,7 +5,7 @@ Skip thought implementation from https://github.com/ryankiros/skip-thoughts.
 
 ## Dependencies
 
-To use the skip thought vectors, you will need to install these:
+To use the skip thought vectors and GAN, you will need to install these:
 
 * Python 2.7
 * Theano 0.7
@@ -14,9 +14,6 @@ To use the skip thought vectors, you will need to install these:
 * [NLTK 3](http://www.nltk.org/)
 * [Keras](https://github.com/fchollet/keras) (for Semantic-Relatedness experiments only)
 * [gensim](https://radimrehurek.com/gensim/) (for vocabulary expansion when training new models)
-
-You will also need to install the following for use for the GAN implementation
-* Keras
 * Tensorflow
 
 ## Getting started
