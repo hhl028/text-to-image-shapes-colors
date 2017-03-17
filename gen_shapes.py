@@ -16,12 +16,13 @@ colors = {
     'yellow': (1.0, 1.0, 0.0),
     'orange': (1.0, 0.66, 0.0),
     'purple': (0.5, 0.0, 0.5),
-    'black': (0.0, 0.0, 0.0),
-    'white': (1.0, 1.0, 1.0)
+    #'black': (0.0, 0.0, 0.0),
+    #'white': (1.0, 1.0, 1.0)
 }
 colors_list = colors.items()
 
-shapes = ['square', 'circle', 'triangle']
+#shapes = ['square', 'circle', 'triangle']
+shapes = ['square', 'circle']
 
 SQUARE_SIZE = 25
 CIRCLE_RADIUS = 15
@@ -40,36 +41,35 @@ desc_fmts = [
     "{2} that is {0} on a {1} background",
     "{2} that is colored {0} on a {1} background",
     "there is a {0} {2} on a {1} background",
-    "there is a {2} colored {0} on a {1} background",
+    #"there is a {2} colored {0} on a {1} background",
     "there is a {2} colored {0} on a background colored {1}",
     "the shape is a {2} colored {0} on a {1} background",
     "this {0} {2} is on a background that is {1}",
-    "this {0} {2} is on a background colored {1}",
-    "this {0} {2} is on a {1} background",
-    "this {2} is {0} and the background is {1}",
-    "this {2} is {0} on a {1} background",
-    "this {2} is {0} and the background is colored {1}",
-    "this {2} is colored {0} on a {1} background",
-    "this {2} is colored {0} and the background is {1}",
-    "this {2} is colored {0} and the background is colored {1}",
-    "this {2} is colored {0} and there is a {1} background",
+    #"this {0} {2} is on a background colored {1}",
+    #"this {0} {2} is on a {1} background",
+    #"this {2} is {0} and the background is {1}",
+    #"this {2} is {0} on a {1} background",
+    #"this {2} is {0} and the background is colored {1}",
+    #"this {2} is colored {0} on a {1} background",
+    #"this {2} is colored {0} and the background is {1}",
+    #"this {2} is colored {0} and the background is colored {1}",
+    #"this {2} is colored {0} and there is a {1} background",
     "a {1} background with a {0} {2}",
     "a {1} background with a {2} that is {0}",
     "a {1} background with a {2} colored {0}",
     "a {1} background with a {2} that is colored {0}",
     "there is a {1} background with a {0} {2}",
     "there is a {1} background with a {2} that is {0}",
-    "there is a {1} background with a {2} colored {0}",
-    "there is a {1} background with a {2} that is colored {0}",
+    #"there is a {1} background with a {2} colored {0}",
+    #"there is a {1} background with a {2} that is colored {0}",
     "{1} background with a {0} {2}",
     "{1} background with a {2} that is {0}",
-    "{1} background with a {2} that is {0}",
     "the background is {1} and the shape is a {0} {2}",
-    "the background is {1} and the shape is a {2} colored {0}",
-    "the background is colored {1} and the shape is a {0} {2}",
-    "the background is colored {1} and the shape is a {2} colored {0}",
-    "this background is {1} and the shape is a {0} {2}",
-    "this background is {1} and the shape is a {2} colored {0}",
+    #"the background is {1} and the shape is a {2} colored {0}",
+    #"the background is colored {1} and the shape is a {0} {2}",
+    #"the background is colored {1} and the shape is a {2} colored {0}",
+    #"this background is {1} and the shape is a {0} {2}",
+    #"this background is {1} and the shape is a {2} colored {0}",
     "this background is colored {1} and the shape is a {0} {2}",
     "this background is colored {1} and the shape is a {2} colored {0}"
 ]
@@ -79,7 +79,7 @@ def main():
     surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, WIDTH, HEIGHT)
     ctx = cairo.Context(surface)
 
-    for i in range(100):
+    for i in range(4056):
         shape_col, shape_rgb, bg_col, bg_rgb = select_colors()
         #print(shape_col, shape_rgb, bg_col, bg_rgb)
 
