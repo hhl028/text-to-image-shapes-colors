@@ -3,6 +3,9 @@ import cairo
 import random
 import math
 
+random.seed(0)
+np.random.seed(0)
+
 image_path = 'shapes/images'
 text_path = 'shapes/texts'
 
@@ -19,7 +22,9 @@ colors = {
     #'black': (0.0, 0.0, 0.0),
     #'white': (1.0, 1.0, 1.0)
 }
-colors_list = colors.items()
+colors_list = list(colors.items())
+colors_list.sort()
+
 
 #shapes = ['square', 'circle', 'triangle']
 shapes = ['square', 'circle']
@@ -76,6 +81,8 @@ desc_fmts = [
 
 
 def main():
+    #random.seed(0)
+
     surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, WIDTH, HEIGHT)
     ctx = cairo.Context(surface)
 
